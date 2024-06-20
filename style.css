@@ -1,34 +1,79 @@
-
-body{
-    background-image: url(https://images.pexels.com/photos/1287075/pexels-photo-1287075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+body {
+    font-family: Candara, sans-serif;
+    background-image: url(https://plus.unsplash.com/premium_photo-1668324814994-2863e908635d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
-    background-size: cover;
-    padding: 50px 150px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-image: url(https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+.bottom form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.formdesign {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.formdesign input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.formerror {
+    color: red;
+    font-size: 14px;
+}
+
+.but {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.but:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
     }
 
-    .formdesign{
-    font-size: 22px;
-    color: rgb(255, 248, 255);
-    
-    }
-    
-    .formdesign input{
-        width: 30%;
-        padding: 10px 20px;
-        border: 2px solid royalblue;
-        margin: 15px;
-        border-radius: 4px;
-        font-size: 18px;
+    .formdesign input {
+        padding: 6px;
     }
 
-    .formerror{
-        color: red;
+    .but {
+        padding: 8px 16px;
     }
-
-    .but{
-        border-radius: 10px;
-        width: 95px;
-        height: 30px;
-        font-size: 22px;
-        margin: 22px 20px;
-    }
+}
